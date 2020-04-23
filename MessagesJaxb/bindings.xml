@@ -1,0 +1,109 @@
+<bindings xmlns="http://java.sun.com/xml/ns/jaxb"
+          xmlns:xsi="http://www.w3.org/2000/10/XMLSchema-instance"
+          xmlns:xs="http://www.w3.org/2001/XMLSchema"
+          version="2.1">
+          
+  <!-- rename attribute -->
+  <bindings schemaLocation="http://www.w3.org/1999/xlink.xsd">
+    <bindings node="//xs:attribute[@name='title']">
+        <property name="TitleAttr"/>
+    </bindings>
+  </bindings>
+  
+  <!-- rename attribute -->
+  <bindings schemaLocation="http://schemas.opengis.net/gml/3.2.1/geometryPrimitives.xsd">
+    <bindings node="//xs:attribute[@name='rows']">
+        <property name="RowsAttr"/>
+    </bindings>
+  </bindings>
+  
+  <!-- Rename classes -->
+  <bindings schemaLocation="http://schemas.opengis.net/gml/3.2.1/datums.xsd">
+    <bindings node="//xs:element[@name='ellipsoid']">
+      <class name="Ellipsoid_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='primeMeridian']">
+      <class name="PrimeMeridian_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='secondDefiningParameter']">
+      <class name="SecondDefiningParameter_L" />
+    </bindings>
+  </bindings>
+  
+  <!-- Rename classes -->
+  <bindings schemaLocation="http://schemas.opengis.net/gml/3.2.1/coordinateOperations.xsd">
+    <bindings node="//xs:element[@name='parameterValue']">
+      <class name="ParameterValue_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='operationParameter']">
+      <class name="OperationParameter_L" />
+    </bindings>
+  </bindings>
+  
+  <!-- Rename classes -->
+  <bindings schemaLocation="http://schemas.opengis.net/gml/3.2.1/coordinateReferenceSystems.xsd">
+    <bindings node="//xs:element[@name='affineCS']">
+      <class name="AffineCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='cartesianCS']">
+      <class name="CartesianCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='conversion']">
+      <class name="Conversion_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='cylindricalCS']">
+      <class name="CylindricalCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='ellipsoidalCS']">
+      <class name="EllipsoidalCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='engineeringDatum']">
+      <class name="EngineeringDatum_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='geodeticDatum']">
+      <class name="GeodeticDatum_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='imageDatum']">
+      <class name="ImageDatum_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='linearCS']">
+      <class name="LinearCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='polarCS']">
+      <class name="PolarCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='sphericalCS']">
+      <class name="SphericalCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='temporalDatum']">
+      <class name="TemporalDatum_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='timeCS']">
+      <class name="TimeCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='userDefinedCS']">
+      <class name="UserDefinedCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='verticalCS']">
+      <class name="VerticalCS_L" />
+    </bindings>
+    <bindings node="//xs:element[@name='verticalDatum']">
+      <class name="VerticalDatum_L" />
+    </bindings>
+  </bindings>
+  
+  <!-- Rename package -->
+  <bindings schemaLocation="cocopcustom/cocopcustom_1.1.xsd">
+    <schemaBindings>
+      <package name="eu.cocop_spire.om_custom._1_1"/>
+    </schemaBindings>
+  </bindings>
+  
+  <!-- Rename package -->
+  <bindings schemaLocation="cocopcustom/cocopcustom_1.2.xsd">
+    <schemaBindings>
+      <package name="eu.cocop_spire.om_custom._1_2"/>
+    </schemaBindings>
+  </bindings>
+  
+</bindings>

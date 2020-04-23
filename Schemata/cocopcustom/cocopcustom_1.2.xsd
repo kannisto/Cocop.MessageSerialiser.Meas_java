@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Please make sure to read and understand README.md and LICENSE.txt.
+
+  This file was prepared in the research project COCOP (Coordinating
+  Optimisation of Complex Industrial Processes).
+  https://cocop-spire.eu/
+  Author: Petri Kannisto, Tampere University, Finland
+  Last modified: 4/2020
+-->
+<schema targetNamespace="http://www.cocop-spire.eu/om-custom/1.2"
+  elementFormDefault="qualified"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:cocop="http://www.cocop-spire.eu/om-custom/1.2">
+
+  <element name="Array" type="cocop:ArrayType"></element>
+  
+  <complexType name="ArrayType">
+    <sequence>
+      <element name="Row" minOccurs="0" maxOccurs="unbounded"
+        type="cocop:ArrayRowType">
+      </element>
+    </sequence>
+  </complexType>
+
+  <complexType name="ArrayRowType">
+    <sequence>
+      <element name="I" minOccurs="0" maxOccurs="unbounded"></element>
+    </sequence>
+  </complexType>
+  
+</schema>

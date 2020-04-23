@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file helps in the generation of XML proxy classes. -->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/proxyhelper" xmlns:tns="http://www.example.org/proxyhelper" elementFormDefault="qualified">
+  
+  <!-- Import standard schemata. This will include plenty of other schemata. -->
+  <import
+    namespace="http://www.opengis.net/sos/2.0"
+    schemaLocation="http://schemas.opengis.net/sos/2.0/sos.xsd"/>
+  
+  <!-- Import COCOP custom schemata -->
+  <import
+    namespace="http://www.cocop-spire.eu/om-custom/1.1"
+    schemaLocation="./cocopcustom/cocopcustom_1.1.xsd"/>
+  <import
+    namespace="http://www.cocop-spire.eu/om-custom/1.2"
+    schemaLocation="./cocopcustom/cocopcustom_1.2.xsd"/>
+    
+</schema>

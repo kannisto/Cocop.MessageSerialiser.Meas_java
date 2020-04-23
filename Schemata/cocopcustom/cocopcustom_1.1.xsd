@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  Please make sure to read and understand README.md and LICENSE.txt.
+
+  This file was prepared in the research project COCOP (Coordinating
+  Optimisation of Complex Industrial Processes).
+  https://cocop-spire.eu/
+  Author: Petri Kannisto, Tampere University, Finland
+  Last modified: 4/2020
+-->
+<schema targetNamespace="http://www.cocop-spire.eu/om-custom/1.1"
+  elementFormDefault="qualified"
+  xmlns="http://www.w3.org/2001/XMLSchema"
+  xmlns:swe="http://www.opengis.net/swe/2.0"
+  xmlns:gml="http://www.opengis.net/gml/3.2"
+  xmlns:cocop="http://www.cocop-spire.eu/om-custom/1.1" xmlns:tsml="http://www.opengis.net/tsml/1.0">
+
+  <import schemaLocation="http://schemas.opengis.net/gml/3.2.1/gmlBase.xsd"
+    namespace="http://www.opengis.net/gml/3.2">
+  </import>
+  <import schemaLocation="http://schemas.opengis.net/sweCommon/2.0/simple_components.xsd"
+    namespace="http://www.opengis.net/swe/2.0">
+  </import>
+  <import schemaLocation="http://schemas.opengis.net/tsml/1.0/timeseriesML.xsd"
+    namespace="http://www.opengis.net/tsml/1.0">
+  </import>
+  
+  <element name="AbstractGmlAsSweDataComponent"
+    substitutionGroup="swe:AbstractDataComponent"
+    type="cocop:AbstractGmlAsSweDataComponentType">
+    <annotation>
+      <documentation>
+        This element enables adding any abstract GML type, such as a
+        timeseries of TSML, as a field of swe:DataRecord.
+      </documentation>
+    </annotation>
+  </element>
+
+  <complexType name="AbstractGmlAsSweDataComponentType">
+    <complexContent>
+      <extension base="swe:AbstractDataComponentType">
+        <sequence>
+          <element ref="gml:AbstractGML"></element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <element name="SweDataComponentAsFeature"
+    substitutionGroup="gml:AbstractFeature"
+    type="cocop:SweDataComponentAsFeatureType">
+    <annotation>
+      <documentation>
+        This element enables setting a swe:DataRecord as a gml:Feature.
+      </documentation>
+    </annotation>
+  </element>
+
+  <complexType name="SweDataComponentAsFeatureType">
+    <complexContent>
+      <extension base="gml:AbstractFeatureType">
+        <sequence>
+          <element ref="swe:DataRecord"></element>
+        </sequence>
+      </extension>
+    </complexContent>
+  </complexType>
+
+  <element name="Array" type="cocop:ArrayType"></element>
+  
+  <complexType name="ArrayType">
+    <sequence>
+      <element name="Row" minOccurs="0" maxOccurs="unbounded">
+        <complexType>
+          <sequence>
+            <element name="I" minOccurs="0" maxOccurs="unbounded"></element>
+          </sequence>
+        </complexType>
+      </element>
+    </sequence>
+  </complexType>
+
+</schema>

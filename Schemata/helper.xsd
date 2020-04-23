@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- This file helps in the validation of messages in tests. -->
+
+<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.example.org/helper" xmlns:tns="http://www.example.org/helper" elementFormDefault="qualified">
+  <import
+    namespace="http://www.opengis.net/sos/2.0"
+    schemaLocation="http://schemas.opengis.net/sos/2.0/sos.xsd"/>
+  <import
+    namespace="http://www.cocop-spire.eu/om-custom/1.1"
+    schemaLocation="./cocopcustom/cocopcustom_1.1.xsd"/>
+  <import
+    namespace="http://www.cocop-spire.eu/om-custom/1.2"
+    schemaLocation="./cocopcustom/cocopcustom_1.2.xsd"/>
+</schema>
