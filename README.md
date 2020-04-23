@@ -135,7 +135,7 @@ Examples
 
 Due to lack of time, this API does not ship with code examples. However, the
 C#/.NET API has an almost similar structure. Its examples can help:
-https://kannisto.github.io/Cocop.MessageSerialiserMeas_csharp
+https://kannisto.github.io/Cocop.MessageSerialiser.Meas_csharp
 
 In addition, the enclosed test projects provide hint how to use the API.
 
