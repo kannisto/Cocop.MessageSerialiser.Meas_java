@@ -1,0 +1,13 @@
+var searchData=
+[
+  ['setdescription',['setDescription',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_item___array_1_1_array_column.html#adc8ea54e3b2992f5b5630db84cf2524c',1,'eu.cocop.messageserialiser.meas.Item_Array.ArrayColumn.setDescription()'],['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_item___time_series.html#ab6ea984722a346e32f00cfe47ab953fb',1,'eu.cocop.messageserialiser.meas.Item_TimeSeries.setDescription()'],['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_observation.html#ad18f3ddc65b055788f93dd31776bdc26',1,'eu.cocop.messageserialiser.meas.Observation.setDescription()']]],
+  ['setfeatureofinterest',['setFeatureOfInterest',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_observation.html#a040cb84c635eaed1228b771e7f88e003',1,'eu::cocop::messageserialiser::meas::Observation']]],
+  ['setlabel',['setLabel',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_item___array_1_1_array_column.html#afa30f865e5b0f66912184500064faa12',1,'eu::cocop::messageserialiser::meas::Item_Array::ArrayColumn']]],
+  ['setname',['setName',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_observation.html#a1236df5d3596b9d12259015124f6980b',1,'eu::cocop::messageserialiser::meas::Observation']]],
+  ['setobservedproperty',['setObservedProperty',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_observation.html#a8334f6dd7869d12f64f154e720fa234c',1,'eu::cocop::messageserialiser::meas::Observation']]],
+  ['setphenomenontime',['setPhenomenonTime',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_observation.html#a87ba2d79d154a983f5529bf632661ced',1,'eu::cocop::messageserialiser::meas::Observation']]],
+  ['setprocedure',['setProcedure',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_observation.html#a44f9f39cde165b9f72f7a4f06cf6f317',1,'eu::cocop::messageserialiser::meas::Observation']]],
+  ['setresultquality',['setResultQuality',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_observation.html#a42c10f30ac2fe6390d4d6d292e401e8c',1,'eu::cocop::messageserialiser::meas::Observation']]],
+  ['setresulttime',['setResultTime',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_observation.html#adc012c284c29d8491af8eb10ba52d865',1,'eu::cocop::messageserialiser::meas::Observation']]],
+  ['supportsdataqualityindatarecord',['supportsDataQualityInDataRecord',['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_item.html#af16ac0bab76c7e8e620c138a60d3d3ef',1,'eu.cocop.messageserialiser.meas.Item.supportsDataQualityInDataRecord()'],['../classeu_1_1cocop_1_1messageserialiser_1_1meas_1_1_item___data_record.html#a2bac4cffa44373af90fffdce1e476b6d',1,'eu.cocop.messageserialiser.meas.Item_DataRecord.supportsDataQualityInDataRecord()']]]
+];
